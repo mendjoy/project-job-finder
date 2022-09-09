@@ -1,2 +1,22 @@
 @charset "UTF-8"; 
 
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+
+/*Navbar*/
+.navbar{
+    padding: 1em;
+    border-bottom: 1px solid #CCC;
+}
+
+.navbar .nav-item a {
+    color: #212529;
+}
+
+.nav-item {
+    margin: 0px 10px;
+    
+}
