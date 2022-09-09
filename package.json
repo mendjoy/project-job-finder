@@ -1,0 +1,35 @@
+{
+  "name": "project-job-finder",
+  "version": "1.0.0",
+  "description": "Site desenvolvido para que programadores encontrem vagas de emprego.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mendjoy/project-job-finder.git"
+  },
+  "keywords": [
+    "job",
+    "finder",
+    "dev",
+    "programador",
+    "job"
+  ],
+  "author": "'Joyce Mendes' <mendjoys@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mendjoy/project-job-finder/issues"
+  },
+  "homepage": "https://github.com/mendjoy/project-job-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express-handlebars": "^6.0.6",
+    "sequelize": "^6.21.6",
+    "sqlite3": "^5.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
