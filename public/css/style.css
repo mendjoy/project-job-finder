@@ -72,7 +72,7 @@
     padding: 0;
 }
 
-#search-for input, #search-form button {
+#search-form input, #search-form button {
     width: 100%;
     border-radius: 0;
     height: 50px;
@@ -161,4 +161,54 @@
 
 .new-job .new-job-label{
     display: block;
+}
+
+/* Pagina add.html*/
+
+#add-form-container{
+    margin-top: 100px;
+}
+
+#form-box{
+    padding: 50px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.411);
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+#add-form-container h2{
+    color: #F03E3E;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#add-form-container form label {
+    font-weight: bold;
+}
+
+#add-form-container form input, #add-form-container form textarea{
+    border: 2px solid #CCC;
+    background-color: #F8F9FA;
+
+}
+
+#form-box button{
+    height: 50px;
+    width: 200px;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-top: 20px;
+}
+
+#form-box button:hover{
+    background-color: white;
+    color: #F03E3E;
+    border-color: #F03E3E;
+}
+
+#add-form-container h1{
+    margin-bottom: 20px;
 }
