@@ -2,7 +2,7 @@
         <h1 id="main-title" class="text-center">Encontre o emprego dos seus sonhos</h1>
         <p id="main-subtitle" class="text-center">Somos o site com mais vagas de Tecnologia no mercado, direcionadas a home office</p>
         
-        <form id="search-form" class="form-inline" action="">
+        <form id="search-form" class="form-inline" action="/" method="get">
             <div class="form-group col-md-10">
                 <input type="text" class="form-control" id="job" name="job" placeholder="Digite a vaga que está buscando">
             </div>
@@ -17,7 +17,14 @@
         <div id="jobs-container" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 #job-list-title>Veja as nossas vagas em destaque</h2>
+                    {{#if search}}
+                        <h2 id="job-list-title">Buscando vagas que contém: {{search}}</h2>
+
+                    {{else}}
+
+                    <h2 id="job-list-title">Veja as nossas vagas em destaque</h2>
+
+                    {{/if}}
                     <ul id="job-list" class="list-group">
 
                         {{#each jobs}}
@@ -26,9 +33,9 @@
                             <img src="/images/company.svg" alt="Company">
                             <p>{{dataValues.company}}</p>
                             <h2>{{dataValues.title}}</h2>
-                            <p>{{dataValues.salary}}</p>
+                            <p> R${{dataValues.salary}}</p>
                             <span class="new-job-label">Nova</span>
-                            <a href="" class="btn btn-primary">Ver Vaga</a>
+                            <a href="/jobs/view/{{dataValues.id}}" class="btn btn-primary">Ver Vaga</a>
                         </li>
 
                         {{/each}}
